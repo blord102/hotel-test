@@ -109,19 +109,6 @@ const PROPERTIES_TEMPLATE = [
   ],
     accent: "#8A7055", isYours: false,
   },
-  {
-    id: "hot_sulphur", lat: 40.0742, lng: -106.105, name: "Hot Sulphur Springs Resort & Spa", tagline: "Historic natural mineral hot springs",
-    price: 175, priceSuffix: "/night · cabin from $229", suitePrice: 229, suiteLabel: "Historic Cabin", rating: 3.5, reviews: 337,
-    location: "Hot Sulphur Springs, CO · 40 min from Winter Park",
-    amenities: ["20 Natural Hot Springs Pools (98-112F)","Mineral Soaking","Massage Therapy","Riverside Setting","Historic 1903 Property","Cabins & Rooms","Free Parking","Peaceful / Unplugged"],
-    images: [
-    "https://i.postimg.cc/7LbgZbK3/Hot_Sulphur_Springs_Colorado_Winter.jpg",
-    "https://i.postimg.cc/rwf1T5Nw/Hot_Sulpher_Springs_Room.jpg",
-    "https://i.postimg.cc/sgjYbT72/Hot_Sulphur_Springs_Building.jpg",
-    "https://i.postimg.cc/QdfQDcJN/Hot_Sulpher_Springs_Deck.jpg"
-  ],
-    accent: "#9B7A52", isYours: false,
-  },
 ];
 
 function shuffle(arr) {
@@ -151,7 +138,6 @@ function MapView({ properties, onSelect }) {
   const W = 900, H = 600;
 
   const PIN_POSITIONS = {
-    "hot_sulphur": [55, 45],
     "devils_thumb": [430, 60],
     "hi_express": [195, 390],
     "oak_ember": [160, 440],
@@ -173,8 +159,6 @@ function MapView({ properties, onSelect }) {
     "M 340,175 Q 360,210 380,250 Q 400,275 420,290",
     // County road 5001 area (Oak & Ember)
     "M 270,305 Q 290,295 310,290 Q 330,288 350,292",
-    // Road toward Hot Sulphur Springs
-    "M 20,340 Q 10,350 8,370",
   ];
 
   // Topographic-style contour lines for mountain feel
@@ -312,17 +296,6 @@ function MapView({ properties, onSelect }) {
             </g>
           );
         })}
-        {/* Off-screen arrow for Hot Sulphur Springs */}
-        <g style={{ pointerEvents: "none" }}>
-          <line x1="55" y1="72" x2="30" y2="25" stroke="#444" strokeWidth="1.5" strokeDasharray="4,3" markerEnd="url(#arrow)" />
-          <defs>
-            <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-              <path d="M0,0 L0,6 L6,3 z" fill="#444" />
-            </marker>
-          </defs>
-          <text x="18" y="18" fill="#555" fontSize="9" fontFamily="DM Sans, sans-serif">further west →</text>
-        </g>
-      </svg>
 
       {/* Tooltip popup */}
       {tooltip && (
