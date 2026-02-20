@@ -12,9 +12,9 @@ const PROPERTIES_TEMPLATE = [
     amenities: ["Hot Tub","Sauna","Steam Room & Aromatherapy","Cold Plunge","Game Room","Great Room","Fireplace","Kitchen Gathering Area","Lounge & Library","Shuffleboard"],
     images: [
     "https://i.postimg.cc/pdRJk9SW/Pub_Hero.jpg",
-    "<a href="https://postimg.cc/nXSmhLZ3" target="_blank"><img src="https://i.postimg.cc/nXSmhLZ3/Pub_Loft.jpg" alt="Pub_Loft"></a>",
-    "<a href="https://postimg.cc/NKCXj0Yp" target="_blank"><img src="https://i.postimg.cc/NKCXj0Yp/Pub_Lounge.jpg" alt="Pub_Lounge"></a>",
-    "<a href="https://postimg.cc/0zXSyNxn" target="_blank"><img src="https://i.postimg.cc/0zXSyNxn/Pub_Std_Rm.jpg" alt="Pub_Std_Rm"></a>"
+    '<a href="https://postimg.cc/nXSmhLZ3" target="_blank"><img src="https://i.postimg.cc/nXSmhLZ3/Pub_Loft.jpg" alt="Pub_Loft"></a>',
+    '<a href="https://postimg.cc/NKCXj0Yp" target="_blank"><img src="https://i.postimg.cc/NKCXj0Yp/Pub_Lounge.jpg" alt="Pub_Lounge"></a>',
+    '<a href="https://postimg.cc/0zXSyNxn" target="_blank"><img src="https://i.postimg.cc/0zXSyNxn/Pub_Std_Rm.jpg" alt="Pub_Std_Rm"></a>'
   ],
     accent: "#C27D4A", isYours: true,
   },
