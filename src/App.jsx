@@ -16,9 +16,9 @@ const PROPERTIES_TEMPLATE = [
     amenities: ["Hot Tub","Sauna","Steam Room & Aromatherapy","Cold Plunge","Game Room","Great Room","Fireplace","Kitchen Gathering Area","Lounge & Library","Shuffleboard"],
     images: [
       "https://i.postimg.cc/pdRJk9SW/Pub_Hero.jpg",
-      "https://i.postimg.cc/nXSmhLZ3/Pub_Loft.jpg",
-      "https://i.postimg.cc/NKCXj0Yp/Pub_Lounge.jpg",
-      "https://i.postimg.cc/0zXSyNxn/Pub_Std_Rm.jpg"
+      "https://i.postimg.cc/Xv4kxZP6/Pub_Loft.jpg",
+      "https://i.postimg.cc/nLpGTsWb/Pub_Lounge.jpg",
+      "https://i.postimg.cc/DznP5WM9/Pub_Std_Rm.jpg"
     ],
     accent: "#C27D4A", isYours: true,
   },
