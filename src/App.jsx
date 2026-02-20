@@ -11,10 +11,10 @@ const PROPERTIES_TEMPLATE = [
     location: "Fraser, CO · 15 min to Winter Park",
     amenities: ["Hot Tub","Sauna","Steam Room & Aromatherapy","Cold Plunge","Game Room","Great Room","Fireplace","Kitchen Gathering Area","Lounge & Library","Shuffleboard"],
     images: [
-    "https://i.postimg.cc/hGHNftYw/Pub_Hero.png",
-    "https://i.postimg.cc/VvwTWHmn/Pub_Std_Rm.png",
-    "https://i.postimg.cc/QCDPJnhG/Pub_Lounge.png",
-    "https://i.postimg.cc/63ngRNJw/Pub_Loft.png"
+    "https://i.postimg.cc/pdRJk9SW/Pub_Hero.jpg",
+    "<a href="https://postimg.cc/nXSmhLZ3" target="_blank"><img src="https://i.postimg.cc/nXSmhLZ3/Pub_Loft.jpg" alt="Pub_Loft"></a>",
+    "<a href="https://postimg.cc/NKCXj0Yp" target="_blank"><img src="https://i.postimg.cc/NKCXj0Yp/Pub_Lounge.jpg" alt="Pub_Lounge"></a>",
+    "<a href="https://postimg.cc/0zXSyNxn" target="_blank"><img src="https://i.postimg.cc/0zXSyNxn/Pub_Std_Rm.jpg" alt="Pub_Std_Rm"></a>"
   ],
     accent: "#C27D4A", isYours: true,
   },
