@@ -324,7 +324,7 @@ function ComparisonModal({ items, onClose, onSelect }) {
 }
 
 // ─── PHOTO GRID WITH SHIMMER ─────────────────────────────────────────
-function PhotoGrid({ images, accent, hovered }) {
+function PhotoGrid({ images, accent, hovered, children }) {
   const [heroIdx, setHeroIdx] = useState(0);
   const [fading, setFading] = useState(false);
   const thumbs = images.slice(0, 4);
@@ -343,12 +343,21 @@ function PhotoGrid({ images, accent, hovered }) {
           <OptimizedImage src={images[heroIdx]} alt="" />
         </div>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, #0F0F0F 0%, rgba(15,15,15,0.05) 50%, transparent 100%)", pointerEvents: "none" }} />
+        
+        {/* Fix: Render the pricing box directly inside the hero image */}
+        {children} 
       </div>
+      
       {thumbs.length > 1 && (
         <div style={{ display: "grid", gridTemplateColumns: `repeat(${thumbs.length}, 1fr)`, gap: 3, padding: "3px 3px 0", background: "#0A0A0A" }}>
           {thumbs.map((src, i) => (
             <div key={i} onClick={(e) => swapHero(e, i)} style={{ position: "relative", paddingBottom: "65%", overflow: "hidden", cursor: "pointer", outline: i === heroIdx ? `2px solid ${accent}` : "2px solid transparent", outlineOffset: "-2px", borderRadius: 2, transition: "outline 0.15s" }}>
-               <OptimizedImage src={src} alt="" style={{ opacity: i === heroIdx ? 1 : 0.55, filter: i === heroIdx ? "none" : "brightness(0.8)" }} />
+               
+               {/* Fix: Wrap OptimizedImage in an absolute inset container so it fills the border */}
+               <div style={{ position: "absolute", inset: 0 }}>
+                 <OptimizedImage src={src} alt="" style={{ opacity: i === heroIdx ? 1 : 0.55, filter: i === heroIdx ? "none" : "brightness(0.8)" }} />
+               </div>
+               
             </div>
           ))}
         </div>
@@ -373,16 +382,16 @@ function PropertyCard({ property, onHoverStart, onHoverEnd, onSelect, isSelected
         display: "flex", flexDirection: "column", position: "relative",
       }}>
       
-      <div style={{ position: "relative" }}>
-        <PhotoGrid images={property.images} accent={property.accent} hovered={hovered} />
-        <div style={{ position: "absolute", bottom: 54, right: 10, zIndex: 6, background: "rgba(8,8,8,0.85)", backdropFilter: "blur(14px)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10, padding: "7px 12px" }}>
+      {/* Fix: Pass the pricing tag as children to PhotoGrid so it sits perfectly over the hero image */}
+      <PhotoGrid images={property.images} accent={property.accent} hovered={hovered}>
+        <div style={{ position: "absolute", bottom: 10, right: 10, zIndex: 6, background: "rgba(8,8,8,0.85)", backdropFilter: "blur(14px)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10, padding: "7px 12px" }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 5 }}>
             <span style={{ fontSize: 20, fontWeight: 700, fontFamily: "'DM Sans', sans-serif", color: "#F5F5F5" }}>${property.price}</span>
             <span style={{ fontSize: 9.5, color: "#7A7A7A", fontFamily: "'DM Mono', monospace" }}>/night</span>
           </div>
           <div style={{ fontSize: 10, color: "#555", fontFamily: "'DM Sans', sans-serif", marginTop: 2 }}>{property.suiteLabel}: <span style={{ color: "#9CA3AF" }}>${property.suitePrice}</span></div>
         </div>
-      </div>
+      </PhotoGrid>
 
       <div style={{ padding: "18px 20px 22px", flex: 1, display: "flex", flexDirection: "column", gap: 11 }}>
         <div>
