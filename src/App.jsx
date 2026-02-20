@@ -37,7 +37,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "gravity_haus", lat: 39.907, lng: -105.787, name: "Gravity Haus", tagline: "Boutique motel for outdoor enthusiasts",
-    price: 197, priceSuffix: "/night · loft suites from $374", suitePrice: 374, suiteLabel: "Bunk Suite", rating: 4.0, reviews: 145,
+    price: 249, priceSuffix: "/night · loft suites from $374", suitePrice: 374, suiteLabel: "Bunk Suite", rating: 4.0, reviews: 145,
     location: "Downtown Winter Park, CO",
     amenities: ["2 Outdoor Hot Tubs","Fitness Center","Restaurant","Coffee Shop","Bar & Lounge","Outdoor Firepit","Free WiFi","Pet Friendly","Cycling Access"],
     images: [
