@@ -11,7 +11,7 @@ const SHARED_KEY = "oak_ember_hotel_test_v1";
 const PROPERTIES_TEMPLATE = [
   {
     id: "oak_ember", lat: 39.9458, lng: -105.8183, name: "Oak & Ember", tagline: "Elemental Wellness Retreat",
-    price: 315, priceSuffix: "/night · suites from $369", suitePrice: 429, suiteLabel: "Signature Suite", rating: 4.8, reviews: 178,
+    price: 334, priceSuffix: "/night · suites from $489", suitePrice: 489, suiteLabel: "Signature Suite", rating: 4.8, reviews: 178,
     location: "Fraser, CO · 15 min to Winter Park",
     amenities: ["Hot Tub","Sauna","Steam Room & Aromatherapy","Cold Plunge","Game Room","Great Room","Fireplace","Kitchen Gathering Area","Lounge & Library","Shuffleboard"],
     images: [
@@ -24,7 +24,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "aframe_club", lat: 39.893, lng: -105.764, name: "A-Frame Club", tagline: "Mid-century cabins at the mountain base",
-    price: 425, priceSuffix: "/night · loft cabins from $650", suitePrice: 369, suiteLabel: "Loft Cabin", rating: 4.3, reviews: 312,
+    price: 399, priceSuffix: "/night · loft cabins from $499", suitePrice: 499, suiteLabel: "Loft Cabin", rating: 4.3, reviews: 312,
     location: "Winter Park, CO · Base of ski resort",
     amenities: ["2 Hot Tubs","Sauna","Wood-fired Restaurant","Bar & Saloon","Custom Fireplaces","Kitchenettes","Pet Friendly","Ski Storage","Fraser River Views"],
     images: [
@@ -37,7 +37,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "gravity_haus", lat: 39.907, lng: -105.787, name: "Gravity Haus", tagline: "Boutique motel for outdoor enthusiasts",
-    price: 365, priceSuffix: "/night · loft suites from $550", suitePrice: 349, suiteLabel: "Bunk Suite", rating: 4.0, reviews: 145,
+    price: 197, priceSuffix: "/night · loft suites from $374", suitePrice: 374, suiteLabel: "Bunk Suite", rating: 4.0, reviews: 145,
     location: "Downtown Winter Park, CO",
     amenities: ["2 Outdoor Hot Tubs","Fitness Center","Restaurant","Coffee Shop","Bar & Lounge","Outdoor Firepit","Free WiFi","Pet Friendly","Cycling Access"],
     images: [
@@ -50,7 +50,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "zephyr_lodge", lat: 39.887, lng: -105.759, name: "Zephyr Mountain Lodge", tagline: "Ski-in / ski-out at the base village",
-    price: 389, priceSuffix: "/night · 2BR condos from $575", suitePrice: 469, suiteLabel: "2BR Condo", rating: 4.2, reviews: 534,
+    price: 346, priceSuffix: "/night · 2BR condos from $492", suitePrice: 469, suiteLabel: "2BR Condo", rating: 4.2, reviews: 534,
     location: "Winter Park Resort Base Village",
     amenities: ["Ski-In / Ski-Out","4 Hot Tubs","Fitness Center","Full Kitchen","In-Room Fireplace","Ski Storage","Free Shuttle","Mountain Views","Underground Parking"],
     images: [
@@ -63,7 +63,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "wp_chateau", lat: 39.903, lng: -105.784, name: "Winter Park Chateau", tagline: "Highest-rated boutique hotel in Winter Park",
-    price: 385, priceSuffix: "/night · suites from $575", suitePrice: 339, suiteLabel: "Junior Suite", rating: 5.0, reviews: 423,
+    price: 201, priceSuffix: "/night · suites from $370", suitePrice: 370, suiteLabel: "Junior Suite", rating: 5.0, reviews: 423,
     location: "Downtown Winter Park, CO",
     amenities: ["Hot Tub (View Deck)","Private Bar & Lounge","Soaking Tubs","Mountain Views","Free Breakfast","Free Parking","Pet Friendly","Concierge"],
     images: [
@@ -76,7 +76,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "bw_alpenglo", lat: 39.911, lng: -105.792, name: "Best Western Alpenglo Lodge", tagline: "Award-winning lodge near the slopes",
-    price: 269, priceSuffix: "/night · hot tub rooms from $319", suitePrice: 259, suiteLabel: "Hot Tub Room", rating: 4.1, reviews: 750,
+    price: 161, priceSuffix: "/night · hot tub rooms from $239", suitePrice: 239, suiteLabel: "Hot Tub Room", rating: 4.1, reviews: 750,
     location: "Downtown Winter Park, CO",
     amenities: ["Indoor Hot Tub","Free Hot Breakfast","Free Parking","Ski Storage","Bike Rental","Free WiFi","Business Center","Pet Friendly","Shuttle Access"],
     images: [
@@ -89,7 +89,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "hi_express", lat: 39.939, lng: -105.808, name: "Holiday Inn Express & Suites", tagline: "Full-service comfort in Fraser Valley",
-    price: 289, priceSuffix: "/night · king suites from $389", suitePrice: 269, suiteLabel: "King Suite", rating: 4.0, reviews: 172,
+    price: 133, priceSuffix: "/night · king suites from $171", suitePrice: 171, suiteLabel: "King Suite", rating: 4.0, reviews: 172,
     location: "Fraser, CO · 10 min to Winter Park",
     amenities: ["Indoor Pool","Hot Tub","Free Breakfast","Fitness Center","Outdoor Firepit","Free WiFi","Ski Lockers","Free Parking","Lift Shuttle Stop"],
     images: [
@@ -102,7 +102,7 @@ const PROPERTIES_TEMPLATE = [
   },
   {
     id: "devils_thumb", lat: 40.019, lng: -105.842, name: "Devil's Thumb Ranch Resort & Spa", tagline: "6,500-acre luxury ranch & full spa",
-    price: 424, priceSuffix: "/night · cabins from $664", suitePrice: 529, suiteLabel: "Log Cabin", rating: 4.5, reviews: 891,
+    price: 444, priceSuffix: "/night · cabins from $644", suitePrice: 644, suiteLabel: "Log Cabin", rating: 4.5, reviews: 891,
     location: "Tabernash, CO · 20 min from Winter Park",
     amenities: ["Full-Service Spa","Heated Outdoor Pool","Hot Tub","Sauna","2 Restaurants & Bar","Nordic Skiing","Horseback Riding","Fly Fishing","Concierge"],
     images: [
